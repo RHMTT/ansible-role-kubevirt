@@ -8,6 +8,5 @@
       namespace: default
       state: present
       running: false
-      validate_certs: false
     register: ocp_vm_status
     changed_when: ocp_vm_status.result.status.printableStatus == 'Running'
